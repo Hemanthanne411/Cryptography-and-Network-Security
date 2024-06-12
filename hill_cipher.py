@@ -1,3 +1,5 @@
+# HILL CIPHER 
+
 #key should be 3x3 matrix size i.e GYBNQKURP
 #message should be of 3-size i.e ACT
 #create a key_matrix(3x3) and also a message_matrix(3x1)
@@ -30,18 +32,11 @@ def main():
     cipher_matrix=np.dot(key_matrix,message_matrix)
     
     cipher_matrix=cipher_matrix% 26
-    cipher_text=[]
+    cipher_text=""
     for i in range(3):
-        cipher_text.append(chr(cipher_matrix[i][0]+65))
-    
-    
-    print("the encrypted message is : " + "".join(cipher_text))
-    
-    
-        
-        
-    
-    
+        cipher_text+= chr(cipher_matrix[i][0]+65)
+      
+    print("the encrypted message is : ",cipher_text)
     
 if __name__=="__main__":
     main()

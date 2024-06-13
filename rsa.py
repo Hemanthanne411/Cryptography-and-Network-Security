@@ -22,7 +22,7 @@ while(e<phi):
         
 print("e =", e)
 # step 5
-k = 2
+k = 1
 d = ((k*phi)+1)/e
 
 print("d =", d)
